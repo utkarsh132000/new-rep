@@ -1,1 +1,20 @@
-this is new repo 
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh 'echo "success"'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'echo "success"'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'echo "success"'
+            }
+        }
+    }
+}
